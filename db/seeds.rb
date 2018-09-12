@@ -20,8 +20,8 @@ csv.each do |row|
   t.city = row['city']
   t.country = row['country']
   t.website = row['website']
-  t.cropped_image = "/images/cropped_images/c #{t.name} #{t.city}.jpg"
-  t.full_image = "/images/cropped_images/#{t.name} #{t.city}.jpg"
+  t.cropped_image = "http://localhost:3000/images/cropped_images/c #{t.name} #{t.city}.jpg"
+  t.full_image = "http://localhost:3000/images/full_images/#{t.name} #{t.city}.jpg"
   t.save
   puts "#{t.name} saved"
 end
